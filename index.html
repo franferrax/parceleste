@@ -20,6 +20,11 @@
     <meta property="og:image:height" content="1200">
     <meta property="og:image" content="https://parceleste.musica.ar/img/convolucion.png">
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+            crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -33,8 +38,9 @@
             integrity="sha384-NM4GHvd8vowDIel+2LNoo7mgwJN5e3Uj5WODAko2Eqg0LUP7eyZ+W1pjSfjbnYXt"
             crossorigin="anonymous"></script>
 
-    <!-- Custom styles -->
+    <!-- Custom styles and script -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 
@@ -45,50 +51,7 @@
         <h1 class="text-center my-5" style="font-size: 5.5em;">Par Celeste</h1>
         <h2 class="text-center my-4 gray">No le busques vuelta al mundo, en lo simple está lo sabio.</h2>
     </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="mx-auto d-block text-center">
-                <a href="https://open.spotify.com/artist/057xQtgGi2BD6KRn0O1gcI" title="Spotify">
-                    <i class="fab fa-spotify"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="mx-auto d-block text-center">
-                <a href="https://itunes.apple.com/album/convoluci%C3%B3n/1414594951" title="iTunes">
-                    <i class="fab fa-itunes"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="mx-auto d-block text-center">
-                <a href="https://www.instagram.com/parceleste/" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="mx-auto d-block text-center">
-                <a href="https://www.facebook.com/ParCeleste/posts/" title="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="mx-auto d-block text-center">
-                <a href="https://twitter.com/parceleste/" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="mx-auto d-block text-center">
-                <a href="https://www.youtube.com/channel/UCya0tSxvdgDpJzj8NSsj19g/" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+    <div class="row icons-container" data-links-source="js/links.json"></div>
     <div class="row text-center">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h2 class="text-center my-4 elite-font">Contacto:</h2>
