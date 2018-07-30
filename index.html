@@ -4,25 +4,32 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <!-- Site information -->
+
+    <!-- Site information and favicon-->
     <title>Par Celeste</title>
     <meta name="description" content="Sitio oficial de la banda Par Celeste.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Facebook's bot information -->
     <meta property="og:url" content="https://parceleste.musica.ar/">
     <meta property="og:title" content="Par Celeste - Sitio oficial">
     <meta property="og:description"
           content="Somos una banda que surge como un proyecto de composición sin rumbo definido. Con raíces de pop/rock, nos gusta jugar con el folclore, el tango, el hard rock, la electrónica, etc.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
     <meta property="og:image" content="https://parceleste.musica.ar/img/convolucion.png">
-    <!-- favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Special Elite font -->
     <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
     <!-- Font Awesome (icons) -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
     <!-- Custom styles -->
     <style type="text/css">
       body { background-color: #101010; }
@@ -35,12 +42,6 @@
       .elite-font { font-family: 'Special Elite', cursive; }
       .gray { color: gray; }
       #qr-code { opacity: 0.8; }
-      #player-frame {
-        overflow: hidden;
-        width: 300px;
-        height: 490px;
-        border: 0px;
-      }
     </style>
 </head>
 
@@ -50,7 +51,7 @@
     <div class="row my-5"></div>
     <div class="elite-font">
         <h1 class="text-center my-5" style="font-size: 5.5em;">Par Celeste</h1>
-        <h2 class="text-center my-4 gray">No le busques vuelta al mundo, en lo simple está lo sabio.<h2>
+        <h2 class="text-center my-4 gray">No le busques vuelta al mundo, en lo simple está lo sabio.</h2>
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
@@ -97,19 +98,19 @@
         </div>
     </div>
     <div class="row text-center">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h2 class="text-center my-4 elite-font">Contacto:</h2>
-        <!-- For small devices, show vCard download link -->
-        <div class="d-md-none">
-          <a href="contact/contact.vcf">
-            <i class="far fa-address-card"></i>
-          </a>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2 class="text-center my-4 elite-font">Contacto:</h2>
+            <!-- For small devices, show vCard download link -->
+            <div class="d-md-none">
+                <a href="contact/contact.vcf">
+                    <i class="far fa-address-card"></i>
+                </a>
+            </div>
+            <!-- For big devices, show the QR code -->
+            <div class="d-none d-md-block">
+                <object id="qr-code" type="image/svg+xml" data="contact/contact.svg"></object>
+            </div>
         </div>
-        <!-- For big devices, show the QR code -->
-        <div class="d-none d-md-block">
-          <object id="qr-code" type="image/svg+xml" data="contact/contact.svg"></object>
-        </div>
-      </div>
     </div>
 </div>
 </body>
