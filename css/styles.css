@@ -1,0 +1,42 @@
+body {
+    background-color: #101010;
+}
+
+a {
+    font-size: 5em;
+}
+
+a:link {
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:visited:hover {
+    color: white;
+    border-bottom: 1px dashed white;
+}
+
+a:hover {
+    color: white;
+    border-bottom: 1px dashed white;
+}
+
+a:active {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.elite-font {
+    font-family: 'Special Elite', cursive;
+}
+
+.gray {
+    color: gray;
+}
+
+#qr-code {
+    opacity: 0.8;
+}
