@@ -26,5 +26,10 @@
   {
     "title": "WhatsApp",
     "href": "https://wa.me/5491122881484?text=Hola%20%2APar%20Celeste%2A%20%28Fede%29%2C%20"
+  },
+  {
+    "title": "Fechas",
+    "section": "shows",
+    "icon": "calendar-alt"
   }
 ]

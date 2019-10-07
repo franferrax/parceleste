@@ -28,3 +28,7 @@ a:active {
     color: white;
     border-bottom: 1px solid white;
 }
+
+.gray {
+    color: gray;
+}
