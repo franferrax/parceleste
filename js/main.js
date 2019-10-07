@@ -19,9 +19,10 @@ function loadLinkIcons() {
 
 function generateLinkIcon(link) {
     var icon = $('<i>');
-    icon.addClass('fab').addClass('fa-' + link['title'].toLowerCase());
+    icon.addClass('fab').addClass(`fa-${link['title'].toLowerCase()}`);
 
     var anchor = $('<a>');
+    anchor.addClass('icon');
     anchor.attr('href', link['href']);
     anchor.attr('title', link['title']);
     anchor.append(icon);
