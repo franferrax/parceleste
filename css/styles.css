@@ -28,15 +28,3 @@ a:active {
     color: white;
     border-bottom: 1px solid white;
 }
-
-.elite-font {
-    font-family: 'Special Elite', cursive;
-}
-
-.gray {
-    color: gray;
-}
-
-#qr-code {
-    opacity: 0.8;
-}
