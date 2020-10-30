@@ -56,11 +56,11 @@ function loadLinkIcons() {
 function generateLinkIcon(link) {
     // https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
     var icon_name = link['icon'];
-    var icon_class = 'far';
+    var icon_class = 'fas';  // style: solid
 
     if (! icon_name) {
         icon_name = link['title'].toLowerCase();
-        icon_class = 'fab';
+        icon_class = 'fab';  // style: brands
     }
 
     var icon = $('<i>');
