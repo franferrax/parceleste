@@ -54,6 +54,7 @@ function loadLinkIcons() {
 }
 
 function generateLinkIcon(link) {
+    // https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
     var icon_name = link['icon'];
     var icon_class = 'far';
 
