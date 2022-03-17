@@ -53,6 +53,14 @@ function loadLinkIcons() {
     });
 }
 
+function bootsrapGrided(tag) {
+    return $(tag).addClass('col-xs-12').addClass('col-sm-6').addClass('col-md-4');
+}
+
+function bootsrapCentered(tag) {
+    return $(tag).addClass('mx-auto').addClass('d-block').addClass('text-center');
+}
+
 function generateLinkIcon(link) {
     // https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
     var icon_name = link['icon'];
@@ -63,30 +71,26 @@ function generateLinkIcon(link) {
         icon_class = 'fab';  // style: brands
     }
 
-    var icon = $('<i>');
-    icon.addClass('gray').addClass(icon_class).addClass(`fa-${icon_name}`);
+    var icon_div = bootsrapCentered('<div>');
+    icon_div.addClass(icon_class).addClass(`fa-${icon_name}`)
+            .addClass('gray').addClass('icon');
 
-    var anchor = $('<a>');
-    anchor.addClass('icon');
+    var title_div = bootsrapCentered('<div>');
+    title_div.append(link['title']);
 
-    var href = link['href'];
-    if (href) {
+    var anchor = bootsrapGrided('<a>');
+    if (link['href']) {
         anchor.attr('href', link['href']);
     }
     else {
+        anchor.attr('href', '#' + link['section']);
         anchor.click(sectionChanger(link['section']));
     }
+    anchor.append(icon_div);
+    anchor.append(title_div);
 
-    anchor.attr('title', link['title']);
-    anchor.append(icon);
-
-    var inner_div = $('<div>');
-    inner_div.addClass('mx-auto').addClass('d-block').addClass('text-center');
-    inner_div.append(anchor);
-
-    var outer_div = $('<div>');
-    outer_div.addClass('col-xs-12').addClass('col-sm-6').addClass('col-md-4');
-    outer_div.append(inner_div);
+    var outer_div = bootsrapGrided('<div>');
+    outer_div.append(anchor);
 
     return outer_div;
 }

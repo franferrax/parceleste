@@ -2,31 +2,16 @@ body {
     background-color: #101010;
 }
 
-a.icon {
+.icon {
     font-size: 5em;
 }
 
-a:link {
+a:link, a:visited {
     color: gray;
 }
 
-a:visited {
-    color: gray;
-}
-
-a:visited:hover {
+a:hover, a:active {
     color: white;
-    border-bottom: 1px dashed white;
-}
-
-a:hover {
-    color: white;
-    border-bottom: 1px dashed white;
-}
-
-a:active {
-    color: white;
-    border-bottom: 1px solid white;
 }
 
 .gray {
